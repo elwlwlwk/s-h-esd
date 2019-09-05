@@ -126,7 +126,7 @@ function detect_anoms(data, {k=0.49, alpha=0.05, num_obs_per_period=null,
             if(upper_tail) {
                 var ares = data.map( (datum) => [datum[0], datum[1] - data_med] );
             } else {
-                var ares = data.map( (datum) => [datum[0], data_med - dadatumta[1]] );
+                var ares = data.map( (datum) => [datum[0], data_med - datum[1]] );
             }
         } else {
             var ares = data.map( (datum) => [datum[0], Math.abs(datum[1] - data_med)] );
