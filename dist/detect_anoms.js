@@ -176,7 +176,7 @@ function detect_anoms(data, _ref) {
                 });
             } else {
                 ares = data.map(function (datum) {
-                    return [datum[0], data_med - dadatumta[1]];
+                    return [datum[0], data_med - datum[1]];
                 });
             }
         } else {
